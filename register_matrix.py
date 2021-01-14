@@ -5,6 +5,7 @@
 # Descripcion: Te permite hacer una creación masiva de usuarios en matrix
 
 '''
+A través de curl
 ## GETTING ACCESS_TOCKEN
 curl -XGET "https://my.matrix.host:8448/_matrix/client/r0/login"
 
