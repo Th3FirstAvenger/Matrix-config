@@ -113,7 +113,7 @@ def create_users(token,fichero): # Creación de usuarios a partir de un fichero 
         for info in usuarios:
             full_name = re.findall(r'^(.+),',info) ## Extraer el nombre del usuario 
             email = re.findall(r', ([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)',info) ## Extraer el email
-            pswd = '{0}!2021'.format(re.sub("[ ]", "_",full_name[0].lower())) ## generar passwd a apartir del nombre y apellido
+            pswd = '{0}!2021'.format(re.sub("[ ]", "_",full_name[0].lower())) ## generar passwd a apartir del nombre y apellido (nombre_apellido!2021)
             username = full_name[0].lower().replace(" ", "")
 
             p1.status("Generando usuario {}".format(full_name[0]))
